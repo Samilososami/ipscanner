@@ -6,11 +6,6 @@ git clone https://github.com/Samilososami/ipscanner.git
 cd ipscanner
 chmod +x scan
 pip3 install colorama
-python3 scan
-```
-para añadirlo al path:
-```
-mv scan /usr/bin
 ```
 Configuración de la IP a encontrar:
 ```
@@ -18,3 +13,9 @@ Configuración de la IP a encontrar:
 nano scan
 # cambias la variable IP a la deseada, importante, entre dos comillas
 IP = "10.10.10.100"
+```
+Para añadirlo al path:
+```
+mv scan /usr/bin
+```
+
