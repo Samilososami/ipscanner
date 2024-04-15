@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+
+IP = "192.168.168.170"
+
+from colorama import Fore, Style
+import os
+os.system("clear")
+os.system("arp-scan --localnet > scan.txt")
+with open("scan.txt", "r") as ip:
+	esta_la_ip = ip.read()
+
+if IP in esta_la_ip:
+	print()
+	print(Fore.GREEN + Style.BRIGHT + "  [+] La ip se encuentra activa!" + Style.RESET_ALL)
+	print
+else:
+	print()
+	print(Fore.RED + Style.BRIGHT + "  [-] La ip no se encuentra activa!")
+	print()
+os.system("rm -r scan.txt")
