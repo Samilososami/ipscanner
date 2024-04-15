@@ -7,12 +7,15 @@ cd ipscanner
 chmod +x scan
 pip3 install colorama
 ```
-Configuración de la IP a encontrar:
+Configuración de la IP a encontrar y ejecución:
 ```
 # te diriges al directorio ipscanner
 nano scan
 # cambias la variable IP a la deseada, importante, entre dos comillas
 IP = "10.10.10.100"
+(en nano) CTRL + s
+CTRL + x
+python3 scan
 ```
 Para añadirlo al path:
 ```
